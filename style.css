@@ -1,0 +1,393 @@
+/* Common alignment of the html pages*/
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+
+.nav {
+  padding-top: 2%;
+  padding-left: 30%;
+  padding-bottom: 2%;
+}
+
+.nav a {
+  margin: auto 50px;
+  color: #47c8f7;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.nav a:hover {
+  color: #fff;
+  text-decoration: underline #00bbff;
+}
+
+/* Introduction part of Index page.*/
+.intro {
+  background-color: #070707;
+  padding-top: 50px;
+  display: flex;
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+.intro img {
+  width: 500px;
+  height: 500px;
+  margin-left: 100px;
+  margin-bottom: 50px;
+  border-radius: 500px;
+  box-shadow: -5px -5px 20px 25px #00bbff;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro h1 {
+  text-align: center;
+  color: #47c8f7;
+  font-size: 35px;
+  line-height: 1.4;
+}
+
+.intro span {
+  margin-left: 10px;
+  color: #fff;
+  font-size: 25px;
+}
+
+.intro p {
+  text-align: justify;
+  color: #fff;
+  padding-left: 200px;
+  padding-right: 200px;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+.intro button {
+  margin-left: 200px;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 30px;
+  background-color: #000;
+  border-color: #00bbff;
+}
+
+.intro button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.intro button .fa {
+  font-size: 25px;
+  padding-left: 10px;
+  color: #0062ff;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.intro button:hover {
+  border-color: #fff;
+}
+
+
+/* Skill-set part of the idex page */
+
+.skill-set {
+  background-color: #070707;
+  color: #fff;
+  margin-top: -42px;
+  padding-top: 50px;
+}
+
+.skill-set h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  cursor: pointer;
+  padding-bottom: 30px;
+}
+
+.skill-set h2:hover {
+  text-decoration: underline 3px #00bbff;
+  text-underline-offset: 4px;
+}
+
+.skill-class {
+  display: flex;
+  justify-content: space-around;
+}
+
+.skill-name {
+  text-align: center;
+}
+
+.circle-progress {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #000;
+  border: 5px solid #00bbff;
+  position: relative;
+}
+
+.percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.skill-set button {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 30px;
+  background-color: #000;
+  border-color: #47c8f7;
+  margin-left: 45%;
+}
+
+.skill-set button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.skill-set button .fa {
+  font-size: 25px;
+  padding-left: 10px;
+  color: #0062ff;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.skill-set button:hover {
+  border-color: #fff;
+}
+
+/* Project part of the index page */
+
+.project {
+  background-color: #070707;
+  color: #fff;
+  margin-top: -42px;
+  padding-top: 50px;
+}
+
+.project h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  cursor: pointer;
+  padding-top: 5%;
+}
+
+.project h2:hover {
+  text-decoration: underline 3px #00bbff;
+  text-underline-offset: 4px;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #000;
+}
+
+.projects .box {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin: 2%;
+  margin-top: -10%;
+  transform-style: preserve-3d;
+  animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+
+.projects .box span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+  -webkit-box-reflect: below 0px
+    linear-gradient(transparent, transparent, #000);
+}
+
+.projects .box span img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid #fff;
+  border-radius: 18px;
+  height: 100%;
+  object-fit: cover;
+}
+/*
+.projects {
+  padding: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.projects .box {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #ddd3d3d5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projects .box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.project-title {
+  font-size: 20px;
+  color: #000;
+  margin: 10px 0;
+}
+
+.project-description {
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.project-link {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: yellow;
+  color: #000;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.project-link:hover {
+  background-color: #000;
+  color: yellow;
+}
+*/
+
+.container h2 {
+  font-size: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.contact .left {
+  flex: 30%;
+  background-color: yellow;
+  color: black;
+  width: 180px;
+  height: 400px;
+  margin-top: 50px;
+  margin-left: 150px;
+  box-shadow: 1px 1px 3px 3px red;
+}
+
+.left .fa {
+  font-size: 22px;
+  margin-left: 10px;
+}
+
+p3 {
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.contact .right {
+  flex: 70%;
+  background-color: #000000c0;
+  color: #fff;
+  height: 500px;
+  width: 500px;
+  box-shadow: 1px 1px 4px 4px red;
+  margin-bottom: 10px;
+  margin-right: 200px;
+}
+
+.n1 {
+  width: 300px;
+  height: 30px;
+  margin-left: 300px;
+  border-radius: 10px;
+  border-color: red;
+}
+
+.textarea {
+  width: 300px;
+  height: 150px;
+  margin-left: 300px;
+  border-radius: 10px;
+  border-color: red;
+}
+
+.send {
+  width: 100px;
+  height: 30px;
+  margin-left: 300px;
+  background-color: yellow;
+  color: #000;
+  border-radius: 10px;
+  border-color: #ddd;
+  font-size: 18px;
+}
+
+.send:hover {
+  background-color: white;
+  border-color: yellow;
+}
+
+footer {
+  background-color: red;
+  color: #fff;
+  text-align: center;
+}
+
+footer span {
+  color: yellow;
+  font: bold;
+}
