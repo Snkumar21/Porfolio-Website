@@ -157,8 +157,34 @@ h2 {
   justify-content: flex-start;
 }
 
-.skills-list h3 {
-  padding: 50px;
+#skills h3 {
+  color: #00bcd4;
+  font-size: 1.6rem;
+  margin: 2.5rem 0 1rem 0;
+  border-bottom: 2px solid #00bcd4;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.skill-category h4 {
+  color: #00bcd4;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #00bcd4;
+  padding-left: 15px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  list-style: none;
+  padding-left: 0;
+  justify-content: flex-start;
 }
 
 .skills-list li {
@@ -171,8 +197,7 @@ h2 {
   white-space: nowrap;
   transition: background 0.3s, transform 0.2s;
   cursor: pointer;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin: 5px;
 }
 
 .skills-list li:hover {
