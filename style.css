@@ -19,6 +19,8 @@ header {
   z-index: 1000;
 }
 
+/* Nav Styles */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -94,6 +96,7 @@ header {
   margin-top: 1rem;
   display: inline-block;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -112,6 +115,8 @@ h2 {
   color: #00bcd4;
   margin-bottom: 1rem;
 }
+
+/* Project Section */
 
 .project-list {
   display: grid;
@@ -147,6 +152,8 @@ h2 {
   margin: 0 1rem 1rem;
   color: #ccc;
 }
+
+/* Skill-Set Section*/
 
 .skills-list {
   display: flex;
@@ -206,6 +213,8 @@ h2 {
   transform: scale(1.05);
 }
 
+/* Contact Section */
+
 form {
   display: flex;
   flex-direction: column;
@@ -217,6 +226,7 @@ input, textarea {
   color: white;
   padding: 1rem;
   border: none;
+  cursor: pointer;
   border-radius: 6px;
 }
 
