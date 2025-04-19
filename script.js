@@ -1,5 +1,5 @@
 const typewriter = document.querySelector(".typewriter");
-const roles = ["Nitish Kumar Singh", "Technologist", "Developer", "AI Enthusiast"];
+const roles = ["Nitish Kumar Singh ", "Technologist ", "Developer ", "AI Enthusiast "];
 let index = 0;
 let charIndex = 0;
 let currentRole = "";
@@ -17,13 +17,13 @@ function type() {
 
     if (!isDeleting && charIndex === currentRole.length) {
         isDeleting = true;
-        setTimeout(type, 1000);
+        setTimeout(type, 1500);
     } else if (isDeleting && charIndex === 0) {
         isDeleting = false;
         index++;
-        setTimeout(type, 500);
+        setTimeout(type, 800);
     } else {
-        setTimeout(type, isDeleting ? 50 : 100);
+        setTimeout(type, isDeleting ? 100 : 200);
     }
 }
 type();
