@@ -145,6 +145,8 @@ h2 {
   overflow: hidden;
   border-left: 4px solid #00bcd4;
   transition: transform 0.3s;
+  justify-items: center;
+  padding-bottom: 20px;
 }
 
 .project-card:hover {
@@ -166,6 +168,20 @@ h2 {
 .project-card p {
   margin: 0 1rem 1rem;
   color: #ccc;
+}
+
+.project-card .view-project{
+  color: #333;
+  text-decoration: none;
+  background: #00bcd4;
+  padding: 5px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.project-card .view-project:hover {
+  background: #008c9e;
+  color: #fff;
 }
 
 /* Skill-Set Section*/
