@@ -31,6 +31,7 @@ header {
 .logo {
   font-size: 1.6rem;
   color: #00bcd4;
+  cursor: pointer;
 }
 
 .logo span {
@@ -89,7 +90,7 @@ header {
 .btn {
   padding: 0.7rem 1.4rem;
   background: #00bcd4;
-  color: #000;
+  color: #333333;
   border: none;
   border-radius: 6px;
   text-decoration: none;
