@@ -7,7 +7,7 @@
 
 body {
   background: #0a0a0a;
-  color: #fff;
+  color: #ccc;
   font-family: 'Segoe UI', sans-serif;
 }
 
@@ -115,6 +115,20 @@ h2 {
   font-size: 1.8rem;
   color: #00bcd4;
   margin-bottom: 1rem;
+}
+
+/* About Section */
+#about {
+  gap: 2rem;
+}
+
+#about p {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+#about .achievement-category h3, li{
+  color: #ccc;
 }
 
 /* Project Section */
