@@ -189,6 +189,15 @@ h2 {
   color: #ccc;
 }
 
+#about .achievement-category {
+  padding: 1rem;
+}
+
+.achievement-category ul {
+  padding-left: 5rem;
+  padding-top: 1rem;
+}
+
 #about .achievement-category h3, li{
   color: #ccc;
 }
