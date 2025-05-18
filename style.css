@@ -195,7 +195,7 @@ h2 {
 
 .achievement-category ul {
   padding-left: 5rem;
-  padding-top: 1rem;
+  padding-top: 1px;
 }
 
 #about .achievement-category h3, li{
