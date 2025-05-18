@@ -358,10 +358,6 @@ footer {
     height: 150px;
   }
 
-  .hero-content h2 {
-    font-size: 1.3rem;
-  }
-
   .btn {
     font-size: 0.9rem;
     padding: 0.6rem 1rem;
@@ -373,7 +369,7 @@ footer {
   }
 
   .nav-links {
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     padding: 0.5rem 0;
     gap: 0.5rem;
