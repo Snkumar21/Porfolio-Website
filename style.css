@@ -276,7 +276,6 @@ h2 {
 }
 
 /* Skill-Set Section*/
-
 .skills-list {
   display: flex;
   flex-wrap: wrap;
@@ -336,7 +335,6 @@ h2 {
 }
 
 /* Contact Section */
-
 #contact p {
   font-size: 1.1rem;
   margin: 0.5rem 0;
